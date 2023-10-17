@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body >
+    <div class="container">
+        <h1>Customer Survey Form</h1>
+        <form  name='form1'id="surveyForm">
+         <div class="first">
+            <div class="fname form">
+                <label for="myfirstname">First Name</label>
+                <input type="text" name="myfirstname" id="myfirstname" required>
+            </div>
+            <div class="fname form">
+                <label for="mysecondname">Last Name</label>
+                <input type="text" name="mysecondname" id="mysecondname" required>
+            </div>
+            <div class="email form">
+                <label for="myemail">Email</label>
+                <input type="email" name="myemail" id="myemail" required>
+            </div>
+            <div class="number form">
+                <label for="mynumber">Contact Number</label>
+                <input type="number" name="mynumber" id="mynumber" required>
+            </div>
+            <div class="Profession form">
+                <label for="myProfession">Profession</label>
+                <input type="text" name="myProfession" id="myProfession" required>
+            </div>
+            <div class="birth1 form">
+                <div class="birth">
+                    <label for="mybirth">Date of Birth</label>
+                    <input type="date" name="mybirth" id="mybirth" required>
+                </div>
+                
+                <div class="country form">
+                    <label for="mycountry">Country</label>
+                    <select id="mycountry">
+                        <option selected   value="0">Select</option>
+                        <option value="India">India</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Washington DC">Washington DC</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <div class="gender form">
+                <span>Gender:</span>
+                
+                <input type="checkbox" name="gender" id="mygender1" value="Male">
+                <label for="mygender1">Male</label>
+                
+                <input type="checkbox" name="gender" id="mygender2" value="Female" >
+                <label for="mygender2">Female</label>
+
+                <input type="checkbox" name="gender" id="mygender3" value="Other" >
+                <label for="mygender3">Other</label>
+                
+                
+                
+            </div>
+            
+            
+            <div class="submitreset">
+                  <button type="submit" id="submit">Submit</button>
+                  <button type="reset" id="reset">Reset</button>
+            </div>
+         </div>
+
+        </form>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Survey Results</h2>
+            <p>First Name: <span id="popupFirstName"></span></p>
+            <p>Last Name: <span id="popupLastName"></span></p>
+            <p>Email: <span id="popupEmail"></span></p>
+            <p>Mobile Number: <span id="popupMobile"></span></p>
+            <p>Profession: <span id="popupProfession"></span></p>
+            <p>Date of Birth: <span id="popupDob"></span></p>
+            <p>Country: <span id="popupCountry"></span></p>
+            <p>Gender: <span id="popupGender"></span></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>

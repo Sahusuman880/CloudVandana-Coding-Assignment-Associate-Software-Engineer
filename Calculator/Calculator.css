@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@400;700&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(84, 84, 84);
+            
+        }
+        .container{
+            margin:  180px auto;
+            height: 53vh;
+            width: 32vw;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            /* font-family: 'Gabarito', sans-serif; */
+           
+            
+        }
+        #firstcontainer{
+          display: flex;
+          flex-direction: row;
+        }
+        #secondcontainer{
+          display: flex;
+          flex-direction: row;
+        }
+        .input{
+           height: 13vh;
+           width: 24vw;
+           /* border: 2px solid black; */
+           background-color: white;
+           color: black;
+           font-family: 'Poppins', sans-serif;
+           font-size: 1.5rem;
+           font-weight: bold;
+           padding: 25px 25px;
+
+        }
+        #firstcontainer button{
+            height: 13vh;
+           width: 8vw;
+           /* border: 2px solid black; */
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-family: 'Poppins', sans-serif;
+           background-color: rgb(122, 205, 122);
+           color: white;
+        }
+        #numbers{
+            height: 40vh;
+           width: 24vw;
+           /* border: 2px solid black; */
+        }
+        #operators{
+            height: 40vh;
+           width: 8vw;
+           /* border: 2px solid black; */
+        }
+        #first,#second,#third,#fourth{
+            height: 10vh;
+           width: 24vw;
+           /* border: 2px solid black; */
+           display: flex;
+           
+        }
+        .button,#plus,#minus,#multi,#division{
+            height: 10vh;
+           width: 8vw;
+           /* border: 2px solid black; */
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-family: 'Poppins', sans-serif;
+           font-size: 1.2rem;
+           background-color: rgba(19, 19, 19, 0.871);
+           color: white;
+           font-weight: bold;
+           cursor: pointbutton
+        }
+        #plus,#minus,#multi,#division{
+            background-color: gray;
+            color: white;
+        }
+        
+        

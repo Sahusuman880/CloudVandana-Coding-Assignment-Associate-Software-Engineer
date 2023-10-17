@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@400;700&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gabarito', sans-serif;
+    
+}
+.container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url("./Background.avif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+.container h1{
+    text-align: center;
+    color:black;
+}
+form{
+    display: block;
+    margin: auto;
+    padding: 0px 10px;
+    /* border: 2px solid; */
+}
+.first{
+    height: 100%;
+    width: 30%;
+    border: 2px solid black;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.462);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.fname{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.number{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.birth1{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.gender{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+   
+}
+.country,.birth{
+    height: 5vh;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+   
+}
+.Profession{
+    height: 5vh;
+    width: 90%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.submitreset{
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    margin:0.7rem 1.3rem;
+}
+#submit,#reset{
+    margin: 0 10px;
+    background-color: rgb(250, 0, 0);
+    border-radius: 10px;
+    padding: 0.6rem;
+    width: 30%;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#submit:hover,#reset:hover{
+    background-color: rgb(209, 23, 23);
+}
+.gender input{
+    padding: 5rem;
+}
+.country select{
+    background-color: rgb(207, 199, 199);
+    border-radius: 10px;
+    font-family: 'Gabarito', sans-serif;
+}
+form input{
+    background-color: rgb(207, 199, 199);
+    padding: 0.3rem 1rem;
+    border-style: hidden;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Gabarito', sans-serif;
+    
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+}
+.popup-content button{
+    margin: 0 10px;
+    background-color: rgb(250, 0, 0);
+    border-radius: 10px;
+    padding: 0.6rem;
+    width: 30%;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 1113px) {
+    .first{
+        height: 70%;
+        width: 50%;
+        
+    }
+}
+@media (max-width: 639px) {
+    .first{
+        height: 70%;
+        width: 90%;
+        
+    }
+}
+
